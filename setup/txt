@@ -1,0 +1,58 @@
+# Hướng dẫn cài đặt và chạy chương trình
+
+## Bước 1: Chuẩn bị môi trường
+
+* Cài đặt **Visual Studio 2026**.
+* Cài đặt **.NET 8 hoặc .NET 10** phù hợp với project.
+* Cài đặt **SQL Server **.
+* Cài đặt **SQL Server Management Studio (SSMS)**.
+
+## Bước 2: Tải source code
+
+Clone source code từ GitHub:
+
+```bash
+git clone https://github.com/tringuyen241297/ASPNET-DK24TTK5-NGUYENMINHTRI-DEMO.git
+```
+
+Sau khi clone thành công, mở thư mục project bằng **Visual Studio 2026**.
+
+## Bước 3: Cấu hình cơ sở dữ liệu
+
+* Mở file `appsettings.json`.
+* Tìm phần **ConnectionStrings**.
+* Chỉnh sửa chuỗi kết nối cơ sở dữ liệu phù hợp với máy tính đang sử dụng.
+
+Ví dụ:
+
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Server=YOUR_SERVER;Database=YOUR_DATABASE;Trusted_Connection=True;TrustServerCertificate=True;"
+}
+```
+
+Thay `YOUR_SERVER` và `YOUR_DATABASE` bằng thông tin SQL Server trên máy.
+
+## Bước 4: Tạo cơ sở dữ liệu
+
+* Mở **SQL Server Management Studio (SSMS)**.
+* Kết nối đến SQL Server.
+* Mở file cơ sở dữ liệu `Database.sql` trong thư mục project.
+* Thực thi (Execute) file SQL để tạo cơ sở dữ liệu và các bảng cần thiết cho hệ thống.
+* Kiểm tra lại cơ sở dữ liệu sau khi thực thi thành công.
+
+## Bước 5: Chạy chương trình
+
+* Mở file solution `.sln` bằng **Visual Studio 2026**.
+* Chờ Visual Studio tải và khôi phục các thư viện cần thiết.
+* Nhấn **F5** hoặc **Ctrl + F5** để chạy chương trình.
+
+## Bước 6: Truy cập hệ thống
+
+Sau khi chương trình chạy thành công, mở trình duyệt và truy cập:
+
+```text
+http://localhost:44382
+```
+
+Hệ thống sẽ hiển thị giao diện website bán sản phẩm công nghệ của Apple.
