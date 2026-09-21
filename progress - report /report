@@ -1,0 +1,38 @@
+# 1. Giai đoạn 1: Phân tích & thiết kế (29/08 – 03/09)
+
+* Xác định đề tài website bán sản phẩm công nghệ của Apple.
+* Phân tích yêu cầu chức năng của hệ thống (User, Admin).
+* Thiết kế cơ sở dữ liệu bằng SQL Server.
+* Vẽ các sơ đồ hệ thống (ERD, Class Diagram).
+* Thiết kế giao diện và bố cục website (Mockup).
+
+# 2. Giai đoạn 2: Xây dựng Backend (04/09 – 10/09)
+
+* Tạo project ASP.NET Core MVC.
+* Kết nối cơ sở dữ liệu bằng Entity Framework.
+* Xây dựng Model và Controller.
+* Xây dựng các chức năng:
+
+  * CRUD sản phẩm.
+  * Đăng nhập / đăng ký.
+  * Quản lý sản phẩm.
+
+# 3. Giai đoạn 3: Xây dựng Frontend (11/09 – 17/09)
+
+* Thiết kế giao diện bằng HTML, CSS và Bootstrap.
+* Xây dựng giao diện hiển thị:
+
+  * Danh sách sản phẩm.
+  * Chi tiết sản phẩm.
+  * Tìm kiếm sản phẩm.
+  * Giỏ hàng.
+* Kết nối giao diện với dữ liệu từ Backend.
+
+# 4. Giai đoạn 4: Hoàn thiện & kiểm thử (18/09 – 25/09)
+
+* Hoàn thiện chức năng giỏ hàng và đặt hàng.
+* Kiểm thử các chức năng của hệ thống.
+* Sửa lỗi và tối ưu chương trình.
+* Hoàn thiện giao diện website.
+* Hoàn thiện báo cáo.
+* Chuẩn bị nội dung và demo sản phẩm.
