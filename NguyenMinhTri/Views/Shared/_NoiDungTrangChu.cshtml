@@ -1,0 +1,246 @@
+﻿<style>
+    /* -----------------------------------
+       APPLE STORE CUSTOM STYLE
+    ----------------------------------- */
+    /* Cấu hình chung cho font chữ và hình nền */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .bg-img {
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* Vùng Banner chính (Welcome Area) */
+    .welcome_area {
+        height: 80vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .hero-content h6 {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #f5f5f7; /* Màu trắng xám đặc trưng của Apple */
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    .hero-content h2 {
+        font-size: 64px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 30px;
+        letter-spacing: -1.5px;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    /* Các nút bấm (Buttons) */
+    .btn.essence-btn {
+        display: inline-block;
+        background-color: #0071e3; /* Màu xanh Apple Blue */
+        color: white;
+        padding: 12px 24px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 15px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: none;
+    }
+    .btn.essence-btn:hover {
+        background-color: #005bb5;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+    /* Danh mục sản phẩm (Top Category) */
+    .section-padding-80 {
+        padding: 80px 0;
+    }
+    .single_catagory_area {
+        height: 350px;
+        position: relative;
+        margin-bottom: 30px;
+        border-radius: 18px;
+        overflow: hidden;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .single_catagory_area:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    .catagory-content {
+        position: absolute;
+        bottom: 30px;
+    }
+    .catagory-content a {
+        display: inline-block;
+        padding: 12px 30px;
+        background: rgba(255,255,255,0.95);
+        color: #1d1d1f;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 16px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        transition: all 0.3s;
+    }
+    .catagory-content a:hover {
+        background: #1d1d1f;
+        color: #ffffff;
+    }
+
+    /* Vùng khuyến mãi (CTA Area) */
+    .cta-area {
+        padding: 80px 0;
+    }
+    .cta-content {
+        height: 450px;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    .cta--text {
+        text-align: right;
+        padding-right: 60px;
+    }
+    .cta--text h6 {
+        color: #ff3b30; /* Màu đỏ Apple Red */
+        font-weight: 600;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .cta--text h2 {
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        letter-spacing: -1px;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+
+    /* Tiêu đề mục (Section Heading) */
+    .section-heading h2 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #1d1d1f;
+        margin-bottom: 50px;
+        letter-spacing: -0.5px;
+    }
+
+    /* Vùng thương hiệu (Brands Area) */
+    .brands-area {
+        padding: 60px 0;
+        border-top: 1px solid #d2d2d7;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .single-brands-logo {
+        padding: 15px;
+    }
+    .single-brands-logo img {
+        max-height: 45px;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+        filter: grayscale(100%);
+    }
+    .single-brands-logo img:hover {
+        opacity: 1;
+        filter: grayscale(0%);
+        transform: scale(1.1);
+    }
+</style>
+
+<!-- ##### Welcome Area Start ##### -->
+<section class="welcome_area bg-img"
+         style="background-image:url(https://images.unsplash.com/photo-1491933382434-500287f9b54b?q=80&w=2000&auto=format&fit=crop);">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="hero-content">
+                    <h6>ĐẠI LÝ ỦY QUYỀN</h6>
+                    <h2>APPLE STORE</h2>
+                    <a asp-action="Blog" asp-controller="Home" class="btn essence-btn">Khám phá ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Welcome Area End ##### -->
+
+<!-- ##### Top Catagory Area Start ##### -->
+<div class="top_catagory_area section-padding-80 clearfix">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Single Catagory - iPhone -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" 
+                     style="background-image: url(https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=800&auto=format&fit=crop);">
+                    <div class="catagory-content">
+                        <a asp-action="Index" asp-controller="HangHoa" asp-route-loai="1000">iPhone</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Catagory - MacBook -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" 
+                     style="background-image: url(https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800&auto=format&fit=crop);">
+                    <div class="catagory-content">
+                        <a asp-action="Index" asp-controller="HangHoa" asp-route-loai="1002">MacBook</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Catagory - iPad -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" 
+                     style="background-image: url(https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=800&auto=format&fit=crop);">
+                    <div class="catagory-content">
+                        <a asp-action="Index" asp-controller="HangHoa" asp-route-loai="1003">iPad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Top Catagory Area End ##### -->
+
+<!-- ##### CTA Area Start ##### -->
+<div class="cta-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="cta-content bg-img"
+                     style="background-image: url(https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?q=80&w=2000&auto=format&fit=crop);">
+                    <div class="h-100 d-flex align-items-center justify-content-end">
+                        <div class="cta--text">
+                            <h6>-20%</h6>
+                            <h2>Tuần Lễ Apple</h2>
+                            <a asp-action="Index" asp-controller="HangHoa" class="btn essence-btn">Mua Ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### CTA Area End ##### -->
+
+<!-- ##### New Arrivals Area Start ##### -->
+<section class="new_arrivals_area section-padding-80 clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading text-center">
+                    <h2>Sản Phẩm Nổi Bật</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    @await Component.InvokeAsync("PopularProducts")
+</section>
+<!-- ##### New Arrivals Area End ##### -->
